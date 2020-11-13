@@ -416,7 +416,6 @@ var getJSON = function(url, callback) {
     };
 	xhr.addEventListener('readystatechange', function() {
 		if(this.readyState == 4) {
-			console.log('RESPONSE: ', this.response);
 			let jsonUnits = this.response;
 			for(let i = 0; i < jsonUnits.length; i++) {
 				// Establish attributes

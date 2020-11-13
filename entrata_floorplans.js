@@ -92,7 +92,9 @@ if(!Object.keys) Object.keys = function(o) {
 // Sort data
 xhr.addEventListener('readystatechange', function() {
 	if(this.readyState == 4) {
-		let json = JSON.parse(this.responseText);
+        let json = JSON.parse(this.responseText);
+        console.log('RESPONSE JSON: ', this.responseText);
+        console.log('RESPONSE: ', json);
 		let jsonUnitTypes = json.response.result.Properties.Property[0].Floorplans.Floorplan;
 		let jsonUnits = json.response.result.ILS_Units.Unit;
 		let objKeysUnits = Object.keys(jsonUnits);
