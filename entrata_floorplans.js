@@ -145,7 +145,7 @@ xhr.addEventListener('readystatechange', function() {
 });
 
 // Request data
-xhr.open("POST", "https://matrixresidential.entrata.com/api/v1/propertyunits");
+xhr.open("POST", "https://slxatlanta.entrata.com/api/v1/propertyunits");
 xhr.setRequestHeader("Content-Type", "application/json");
 xhr.setRequestHeader("Authorization", "Basic ZnJlZF9hZ2VuY3lfYXBpQG1hdHJpeHJlc2lkZW50aWFsOkZyZWQxMzAyMDIwKg==");
 
